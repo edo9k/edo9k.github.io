@@ -1,0 +1,187 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança de Banco de Dados</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <style>
+
+.slides section p,
+.slides section ul {
+  text-align: justify;
+}
+
+.flags {
+  height: 22px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.small-text {
+  font-size: 12pt;
+}
+
+    </style> 
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="slide">
+          <div class="title">Segurança de banco de dados</div>
+        </section> 
+
+
+        <section>
+
+          <img src="/presentation/ibm-db-sec.png">
+          <p style="font-size:18pt;">baseado principalmente em:
+          <a href="https://www.ibm.com/topics/database-security">
+            https://www.ibm.com/topics/database-security </a></p>
+
+        </section>
+
+        <section class="slide">
+          <div class="title">O que é segurança de banco de dados?</div>
+
+          <p class="fragment">Segurança de banco de dados se refere ao conjunto de ferramentas, controles e medidas projetados para estabelecer e preservar...</p>
+          <p class="fragment">a confidencialidade; </p>
+          <p class="fragment">a integridade;</p>
+          <p class="fragment">e a disponibilidade do banco de dados.</p>
+
+        </section>
+
+
+        <section class="slide">
+          <div class="title">Manter um banco de dados seguro, implica em proteger...</div>
+        </section>
+
+        <section>
+          <section>Os dados no banco de dados</section>
+          <section>O sistema de gerenciamento desse banco (DBMS)</section>
+          <section>Qualquer aplicação associada</section>
+          <section>O hardware dos servidores (físicos ou virtuais) onde o banco se encontra</section>
+          <section>A infraestrutura computacional usada para acessar o banco (camadas de rede)</section>
+        </section>
+
+
+
+        <section class="slide">
+          <div class="content">
+            <p>Segurança do banco de dados é importante porque violações de dados podem ter consequências sérias para uma organização, como...</p>
+          </div>
+        </section>            
+
+        <section>
+          <section>Propriedade intelectual comprometida</section>
+          <section>Dano à reputação da marca</section>
+          <section>Ameaça à continuidade do negócio</section>
+
+          <section>
+            <p>Multas por não conformidade jurídica</p> 
+            <p>
+            (
+            LGPD <img class="flags" src="https://raw.githubusercontent.com/hampusborgos/country-flags/ba2cf4101bf029d2ada26da2f95121de74581a4d/png250px/br.png"> 
+            / 
+            GDPR <img class="flags" src="https://raw.githubusercontent.com/hampusborgos/country-flags/ba2cf4101bf029d2ada26da2f95121de74581a4d/png250px/eu.png"> 
+            )
+            </p> 
+
+            <p class="fragment">
+            <!-- já deixo aqui a desculpa de usar tanto linebreak (br) no html, é que fiz com pressa demais essa apresentação --> 
+            <strong>Multas por descumprimento da LGPD podem chegar a <span style="color:red;">50 milhões de reais</span></strong> <br>
+            <a class="small-text" href="https://www.migalhas.com.br/depeso/383661/multas-por-descumprimento-da-lgpd-podem-chegar-a-50-milhoes-de-reais"> 
+              https://www.migalhas.com.br/depeso/383661/multas-por-descumprimento-da-lgpd-podem-chegar-a-50-milhoes-de-reais </a>
+            </p>
+
+          </section>
+
+          <section>Custos de reparar violações e notificar clientes</section>
+        </section>
+
+
+        <section class="slide">
+
+          <div class="content">
+            <p>Ameaças e desafios comuns que à segurança de bancos de dados são...</p>
+        </section>            
+
+        <section>
+          <section>Malware</section>
+          <section>Engenharia social</section>
+          <section>Injeção de SQL</section>
+          <section>Vazamento de dados</section>
+          <section>Ameaças internas</section>
+          <section>Migrações (para a nuvem ou on-premise)</section>
+        </section>
+
+
+
+
+        <section class="slide">
+
+          <div class="content">
+            <p>Algumas das melhores práticas para segurança do banco de dados são...</p>
+        </section>
+
+        <section>
+
+          <section>Mascaramento de dados</section>
+          <section>Backup e recuperação de dados</section>
+          <section>Autenticação e autorização de usuários</section>
+          <section>Auditoria e monitoramento</section>
+          <section>Atualização e correção</section>
+
+
+          <section>
+            <div class="title">Criptografia</div>
+            <p class="fragment small-text"> plain text: <code>very-weak-password-2023!!1</code> </p> 
+            <p class="fragment small-text"> MD5: <code> 97a094e222d31c80fd2fff1db328a18d </code> </p> 
+            <p class="fragment small-text" > SHA-1: <code> 48f03efcb508d724f0b011b4576839fb3c7fc5b8 </code> </p> 
+            <p class="fragment small-text"> SHA-2: <code> 9dabd320e50fcc4eaafb9c3ac62009d5e275a5cf5e9f09139c99a9d6 </code> </p> 
+            <p class="fragment small-text"> bcrypt: <code> $2a$10$TBmq32PR0zOsIwLFxSVQSugw5v2uIf5Cn9BQxsKtY.9uXuw2k6OaK </code> </p> 
+
+            <div class="fragment"> 
+              <p class="fragment small-text">adendo: <strong>Criptografia Pós-Quântica</strong> </p>
+              <p class="fragment small-text"> 
+              <a href="https://en.wikipedia.org/wiki/Post-quantum_cryptography">https://en.wikipedia.org/wiki/Post-quantum_cryptography</a> <br>
+              <a href="https://utimaco.com/products/technologies/post-quantum-cryptography/what-lattice-based-cryptography">
+                https://utimaco.com/products/technologies/post-quantum-cryptography/what-lattice-based-cryptography 
+              </a>
+              </p>
+
+              <img style="height: 270px; width: auto;" src="/presentation/lattice-crypt.png">
+          </section>
+
+        </section>
+
+        <section class="slide">
+          <div class="title">Referências</div>
+          <div class="content">
+
+            <p>
+            Segurança do banco de dados: Um guia essencial. IBM <br>
+            <a href="https://www.ibm.com/topics/database-security">
+              https://www.ibm.com/topics/database-security</a></p>
+
+            <p>
+            Introdução ao curso Essencial de Cibersegurança (IBM). Coursera. <br>
+            <a href="https://www.coursera.org/learn/introduction-to-cybersecurity-essentials">
+              https://www.coursera.org/learn/introduction-to-cybersecurity-essentials</a></p>
+
+          </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.min.js"></script>
+        <script>
+
+          Reveal.initialize();
+
+        </script>
+  </body>
+</html>
+
