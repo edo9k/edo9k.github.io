@@ -1,12 +1,37 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="https://sakofchit.github.io/system.css/system.css">
+  </head>
 
   <body>
+    <div class="window">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">messages and stuff</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
 
-    <iframe src="https://giphy.com/embed/cfGmVRsJI6wq6noGxP" width="462" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <div class="window-pane" style="height:min-content">
+        <img width="462" height="480" frameBorder="0" src="self-qr.png">
+        <iframe src="https://giphy.com/embed/cfGmVRsJI6wq6noGxP" width="462" height="480" frameBorder="0" allowFullScreen></iframe>
+      </div>
+    </div>
 
-    <p> <a href="cat.jpg"> git add cat.jpg </a> </p>
-    <p> <a href="cheetos-security.jpg"> git add cheetos-security,jpg </a> </p>
-    <p> <a href="presentation.html"> git add presentation </a> </p>
+    <div class="window">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">actual links</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+
+      <div class="window-pane" style="height:min-content">
+        <p> <a href="cat.jpg"> <code> git add cat.jpg </code> </a> </p>
+        <p> <a href="cheetos-security.jpg"> <code> git add cheetos-security,jpg </code> </a> </p>
+        <p> <a href="presentation.html"> <code> git add presentation </code> </a> </p>
+      </div>
+    </div>
 
   </body>
 </html>
