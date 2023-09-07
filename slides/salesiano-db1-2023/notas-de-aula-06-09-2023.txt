@@ -4,3 +4,15 @@ Exercícios de SQL no site sqlbolt.com
 Instalação PostgreSQL (não conluída) 
 
 Normalização, e exercícios (postcomp).
+
+Leitura do Capítulo "Normalização de Dados" do livro Modelagem e Desenvolvimento de Banco de Dados, na biblioteca Virtual A. 
+
+Questões de Revisão
+
+1. O que é um banco de dados relacional?
+2. O que é uma chave primária em uma tabela?
+3. O que é SQL e para que serve?
+4. O que é normalização e qual é o seu objetivo?
+5. O que é um backup e como ele pode ajudar no gerenciamento de banco de dados?
+
+
