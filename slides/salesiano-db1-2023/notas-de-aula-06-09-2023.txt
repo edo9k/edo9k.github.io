@@ -1,0 +1,6 @@
+
+Exercícios de SQL no site sqlbolt.com
+
+Instalação PostgreSQL (não conluída) 
+
+Normalização, e exercícios (postcomp).
