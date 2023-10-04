@@ -74,6 +74,17 @@ Vue.component('quiz-app', {
 const questions = [
   {
     questionText:
+      "Quais das tecnologias listadas abaixo são Sistemas de Bancos de Dados Relacionais",
+    answerOptions: [
+      { answerText: "MySQL, Postgres, SQLite e Microsoft SQL Server.", isCorrect: true },
+      { answerText: "Java, Javascript, C# e COBOL.", isCorrect: false },
+      { answerText: "Nintendo, Playstation, XBOX e Steam Deck.", isCorrect: false },
+      { answerText: "MongoDB, DynamoDB, Apache Hadoop e CouchDB.", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:
       "Qual cláusula SQL é usada para filtrar registros em uma consulta?",
     answerOptions: [
       { answerText: "SELECT", isCorrect: false },
