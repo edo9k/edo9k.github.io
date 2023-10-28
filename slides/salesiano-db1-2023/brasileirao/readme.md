@@ -5,7 +5,7 @@
     - Quais times foram os maiores vencedores, e quais times ficaram com menos vitórias? 
 
   - Cartões vermelhos e amarelos.
-    - Quais times levou o maior numero de cartões?
+    - Quais times levaram o maior numero de cartões?
     - Quais jogadores receberam o maior número de cartões? 
 
   - Gols
@@ -26,7 +26,7 @@
 # Que banco de dados utilizar?
 
   - Recomendo que escolham entre SQLite, MySQL ou Postgres (por serem abertos e gratuitos para usar).
+    - Uma ferramenta que pode ser usada direto do navegador é o https://sqliteonline.com
   - Mas, caso os participantes do grupo tenham experiência com algum outro banco de dados, podem usá-lo. 
-
 
 
