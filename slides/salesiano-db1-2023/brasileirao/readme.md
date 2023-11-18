@@ -15,7 +15,8 @@
 
 # Entrega do Trabalho 
 
-  - Enviar um e-mail com o título "Brasileirão DB - {Nome da Turma}" 
+  - Enviar um e-mail com o título "Brasileirão DB - {Nome da Turma}"
+  - Enviar para eduardo.franca@souunisales.com.br
   - O e-mail deve conter o nome dos participantes do grupo (no máximo 6) 
   - Enviar os scripts que criam o Banco de Dados que será alimentado pelas informações das planilhas.
   - Enviar as respostas de cada pergunta, e também as queries SQL com as quais foi possível respondê-las. 
