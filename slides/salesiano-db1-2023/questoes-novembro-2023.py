@@ -44,22 +44,6 @@ questions =  [
     "answer": "O operador BETWEEN é utilizado para selecionar valores dentro de um intervalo específico. Ele é útil para filtrar dados em que uma coluna deve estar entre dois valores dados."
   }, 
   {
-    "question": "Qual é a função do operador ORDER BY na cláusula SELECT do SQL e como ele é utilizado?",
-    "answer": "O operador ORDER BY é utilizado para classificar os resultados de uma consulta com base em uma ou mais colunas. Pode ser usado para classificar em ordem ascendente (ASC) ou descendente (DESC)."
-  },
-  {
-    "question": "Como o operador LIMIT é utilizado em consultas SQL e qual é o propósito principal?",
-    "answer": "O operador LIMIT é utilizado para restringir o número de linhas retornadas em uma consulta. Ele é útil para limitar o tamanho do conjunto de resultados, especialmente em consultas que podem retornar muitos registros."
-  },
-  {
-    "question": "O que significa a cláusula IS NULL em uma consulta SQL e em que situações ela é aplicada?",
-    "answer": "A cláusula IS NULL é utilizada para filtrar resultados onde um determinado campo não possui um valor atribuído, ou seja, é nulo. Isso é útil para encontrar registros que não tenham dados em uma coluna específica."
-  },
-  {
-    "question": "Qual é a função do operador ORDER BY na cláusula SELECT do SQL e como ele é utilizado?",
-    "answer": "O operador ORDER BY é utilizado para classificar os resultados de uma consulta com base em uma ou mais colunas. Pode ser usado para classificar em ordem ascendente (ASC) ou descendente (DESC)."
-  },
-  {
     "question": "Como o operador LIMIT é utilizado em consultas SQL e qual é o propósito principal?",
     "answer": "O operador LIMIT é utilizado para restringir o número de linhas retornadas em uma consulta. Ele é útil para limitar o tamanho do conjunto de resultados, especialmente em consultas que podem retornar muitos registros."
   },
@@ -91,6 +75,7 @@ questions =  [
     "question": "O que são 'Collation' e 'Charset' em um banco de dados, e qual é a importância de especificar corretamente esses elementos durante a criação de tabelas?",
     "answer": "Em um banco de dados, 'Collation' refere-se às regras de ordenação e comparação de caracteres, enquanto 'Charset' (conjunto de caracteres) define o conjunto de caracteres utilizado para armazenar dados. É crucial especificar corretamente 'Collation' e 'Charset' durante a criação de tabelas para garantir que as operações de ordenação e comparação sejam realizadas de maneira consistente, e que os dados sejam armazenados e recuperados adequadamente, evitando problemas de codificação e ordenação inconsistentes."
   }
+  
 ] # fecha o array 
 
 
