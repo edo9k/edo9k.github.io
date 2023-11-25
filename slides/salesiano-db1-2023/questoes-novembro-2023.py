@@ -176,5 +176,5 @@ def apresentar():
     clear()
     print(" -- fim das questoes -- ")
 
-exportar()
-# apresentar() 
+# exportar()
+apresentar() 
