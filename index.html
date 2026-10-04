@@ -1,45 +1,472 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="https://sakofchit.github.io/system.css/system.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  </head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eduardo França — Software &amp; Cloud Engineer</title>
+<meta name="description" content="Curriculum Vitae of Eduardo França — software engineer working with Python, JavaScript, PHP, Kubernetes and OpenStack. Bilingual: English / Português.">
+<meta name="author" content="Eduardo França">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7f5f1" media="(prefers-color-scheme: light)">
 
-  <body>
-    <div class="window">
-      <div class="title-bar">
-        <button aria-label="Close" class="close"></button>
-        <h1 class="title">messages and stuff</h1>
-        <button aria-label="Resize" class="resize"></button>
-      </div>
-      <div class="separator"></div>
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Eduardo França — Software &amp; Cloud Engineer">
+<meta property="og:description" content="Software engineer working with Python, JavaScript, PHP, Kubernetes and OpenStack.">
+<meta property="og:url" content="https://eeff.com.br/">
 
-      <div class="window-pane" style="height:min-content">
-        <img width="462" height="480" frameBorder="0" src="self-qr.png">
-        <iframe src="https://giphy.com/embed/cfGmVRsJI6wq6noGxP" width="462" height="480" frameBorder="0" allowFullScreen></iframe>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/favicon.ico">
+<link rel="canonical" href="https://eeff.com.br/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap">
+<link rel="stylesheet" href="/assets/style.css">
+
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('cv-lang');
+      var lang = stored === 'pt' || stored === 'en' ? stored
+        : ((navigator.language || 'en').toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en');
+      document.documentElement.lang = lang;
+    } catch (e) {}
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Eduardo França",
+  "email": "mailto:edox86@gmail.com",
+  "url": "https://eeff.com.br/",
+  "sameAs": ["https://www.linkedin.com/in/eduardofranca/"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Serra",
+    "addressRegion": "ES",
+    "addressCountry": "BR"
+  },
+  "knowsLanguage": ["pt-BR", "en", "es", "de", "fr", "ja", "it"],
+  "jobTitle": "Cloud Platform Engineer",
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universidade Federal do Espírito Santo" },
+    { "@type": "CollegeOrUniversity", "name": "Pitágoras" }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main"><span lang="en">Skip to content</span><span lang="pt">Ir para o conteúdo</span></a>
+
+<header class="topbar" id="top">
+  <div class="topbar__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">EF</span>
+      <span class="brand__text">
+        <strong>Eduardo França</strong>
+        <small><span lang="en">Software &amp; Cloud Engineer</span><span lang="pt">Engenheiro de Software &amp; Nuvem</span></small>
+      </span>
+    </a>
+
+    <nav class="topnav" aria-label="Sections">
+      <a href="#summary"><span lang="en">Summary</span><span lang="pt">Resumo</span></a>
+      <a href="#experience"><span lang="en">Experience</span><span lang="pt">Experiência</span></a>
+      <a href="#education"><span lang="en">Education</span><span lang="pt">Formação</span></a>
+      <a href="#skills"><span lang="en">Skills</span><span lang="pt">Habilidades</span></a>
+      <a href="#contact"><span lang="en">Contact</span><span lang="pt">Contato</span></a>
+    </nav>
+
+    <div class="langswitch" role="group" aria-label="Language / Idioma">
+      <span class="langswitch__track" aria-hidden="true"></span>
+      <button type="button" class="langswitch__btn" data-set-lang="pt" lang="pt" aria-pressed="false">PT</button>
+      <button type="button" class="langswitch__btn" data-set-lang="en" lang="en" aria-pressed="true">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-name">
+    <div class="hero__text">
+      <p class="hero__eyebrow">
+        <span lang="en">Curriculum Vitae</span><span lang="pt">Curriculum Vitae</span>
+      </p>
+      <h1 id="hero-name">Eduardo<span class="hero__surname">&nbsp;França</span></h1>
+      <p class="hero__role">
+        <span lang="en">Software engineer building web applications, internal tools and cloud-native infrastructure — from Node and PHP to Kubernetes and OpenStack.</span>
+        <span lang="pt">Engenheiro de software construindo aplicações web, ferramentas internas e infraestrutura nativa de nuvem — de Node e PHP a Kubernetes e OpenStack.</span>
+      </p>
+      <ul class="hero__contact">
+        <li>
+          <span class="ico" aria-hidden="true">@</span>
+          <a href="mailto:edox86@gmail.com">edox86@gmail.com</a>
+        </li>
+        <li>
+          <span class="ico" aria-hidden="true">in</span>
+          <a href="https://www.linkedin.com/in/eduardofranca/" rel="me noopener" target="_blank">linkedin.com/in/eduardofranca</a>
+        </li>
+        <li>
+          <span class="ico" aria-hidden="true">◎</span>
+          <span><span lang="en">Serra, Espírito Santo, Brazil</span><span lang="pt">Serra, Espírito Santo, Brasil</span></span>
+        </li>
+      </ul>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="mailto:edox86@gmail.com">
+          <span lang="en">Get in touch</span><span lang="pt">Entre em contato</span>
+        </a>
+        <button class="btn" type="button" id="print-btn">
+          <span lang="en">Print / Save PDF</span><span lang="pt">Imprimir / Salvar PDF</span>
+        </button>
       </div>
     </div>
 
-    <div class="window">
-      <div class="title-bar">
-        <button aria-label="Close" class="close"></button>
-        <h1 class="title">actual links</h1>
-        <button aria-label="Resize" class="resize"></button>
+    <dl class="factbox">
+      <div>
+        <dt><span lang="en">Focus</span><span lang="pt">Foco</span></dt>
+        <dd><span lang="en">Cloud platform, backend &amp; full-stack web</span><span lang="pt">Plataforma em nuvem, backend e web full-stack</span></dd>
       </div>
-      <div class="separator"></div>
-
-      <div class="window-pane" style="height:min-content">
-        <p> <a href="cat.jpg"> <code> git add cat.jpg </code> </a> </p>
-        <p> <a href="cheetos-security.jpg"> <code> git add cheetos-security.jpg </code> </a> </p>
-        <p> <a href="slides"> <code> git add slides </code> </a> </p>
-
+      <div>
+        <dt><span lang="en">Experience</span><span lang="pt">Experiência</span></dt>
+        <dd><span lang="en">15+ years, since 2008</span><span lang="pt">15+ anos, desde 2008</span></dd>
       </div>
+      <div>
+        <dt><span lang="en">Languages</span><span lang="pt">Idiomas</span></dt>
+        <dd><span lang="en">Portuguese (native), English (C2)</span><span lang="pt">Português (nativo), inglês (C2)</span></dd>
+      </div>
+      <div>
+        <dt><span lang="en">Open to</span><span lang="pt">Aberto a</span></dt>
+        <dd><span lang="en">Remote &amp; on-site roles</span><span lang="pt">Vagas remotas e presenciais</span></dd>
+      </div>
+    </dl>
+  </section>
+
+  <div class="layout">
+
+    <div class="col-main">
+
+      <section class="block" id="summary" aria-labelledby="h-summary">
+        <h2 class="block__title" id="h-summary">
+          <span lang="en">Professional Summary</span><span lang="pt">Resumo Profissional</span>
+        </h2>
+        <p>
+          <span lang="en">Since 2017 I have been mainly working with Javascript, Node, PHP, Laravel, HTML/CSS, Postgres and Linux. In previous environments, and in my college and master's projects, I used Python, Java, C#, Prolog and Haskell. I love technology, and exploring new programming languages, libraries and frameworks.</span>
+          <span lang="pt">Desde 2017 tenho trabalhado principalmente com Javascript, Node, PHP, Laravel, HTML/CSS, Postgres e Linux. Em ambientes anteriores, e nos projetos da graduação e do mestrado, usei Python, Java, C#, Prolog e Haskell. Amo tecnologia e explorar novas linguagens de programação, bibliotecas e frameworks.</span>
+        </p>
+        <p>
+          <span lang="en">My other passion is language learning. Spanish, German, French, Italian, Japanese — I took classes in all of these languages, with varying degrees of success of course. I can communicate in the first three of the list, plus English and my native Portuguese.</span>
+          <span lang="pt">Minha outra passion é o aprendizado de idiomas. Espanhol, alemão, francês, italiano, japonês — fiz aulas em todos esses idiomas, com graus variáveis de sucesso, claro. Consigo me comunicar nos três primeiros da lista, além de inglês e do meu português nativo.</span>
+        </p>
+      </section>
+
+      <section class="block" id="experience" aria-labelledby="h-exp">
+        <h2 class="block__title" id="h-exp">
+          <span lang="en">Work Experience</span><span lang="pt">Experiência Profissional</span>
+        </h2>
+
+        <article class="entry">
+          <header class="entry__head">
+            <h3 class="entry__role">
+              <span lang="en">Cloud Platform Engineer</span><span lang="pt">Engenheiro de Plataforma em Nuvem</span>
+            </h3>
+            <p class="entry__meta">
+              <span class="entry__org"><span lang="en">Encora</span><span lang="pt">Encora</span></span>
+              <span class="entry__place"><span lang="en">Remote</span><span lang="pt">Remoto</span></span>
+            </p>
+            <p class="entry__dates"><span lang="en"><time datetime="2024-12">Dec 2024</time> &ndash; Present</span><span lang="pt"><time datetime="2024-12">dez. 2024</time> &ndash; Atual</span></p>
+          </header>
+          <div class="entry__body">
+            <p>
+              <span lang="en">Develop and maintain Python-based software for managing StarlingX, Kubernetes and OpenStack solutions, optimizing cloud-native infrastructure at the edge, with a focus on telecom, manufacturing and automotive industries.</span>
+              <span lang="pt">Desenvolvo e mantenho software baseado em Python para gerenciamento de soluções StarlingX, Kubernetes e OpenStack, otimizando a infraestrutura nativa de nuvem na borda, com foco nas indústrias de telecomunicações, manufatura e automotiva.</span>
+            </p>
+            <ul class="chips">
+              <li>Python</li><li>Kubernetes</li><li>OpenStack</li><li>StarlingX</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <header class="entry__head">
+            <h3 class="entry__role">
+              <span lang="en">Application Developer</span><span lang="pt">Desenvolvedor de Aplicações</span>
+            </h3>
+            <p class="entry__meta">
+              <span class="entry__org"><span lang="en">IBM</span><span lang="pt">IBM</span></span>
+              <span class="entry__place"><span lang="en">Remote</span><span lang="pt">Remoto</span></span>
+            </p>
+            <p class="entry__dates"><span lang="en"><time datetime="2022-04">Apr 2022</time> &ndash; Dec 2024</span><span lang="pt"><time datetime="2022-04">abr. 2022</time> &ndash; dez. 2024</span></p>
+          </header>
+          <div class="entry__body">
+            <p>
+              <span lang="en">Application development, frontend, backend, CLI tools. Development for internal tools (web applications and CLI utilities), built on IBM Cloud products, with Python, Javascript, Postgres, PowerShell, and third party APIs.</span>
+              <span lang="pt">Desenvolvimento de aplicações, frontend, backend e ferramentas de CLI. Desenvolvimento de ferramentas internas (aplicações web e utilitários de CLI), construídas sobre produtos IBM Cloud, com Python, Javascript, Postgres, PowerShell e APIs de terceiros.</span>
+            </p>
+            <ul class="chips">
+              <li>Python</li><li>Javascript</li><li>Postgres</li><li>PowerShell</li><li>IBM Cloud</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <header class="entry__head">
+            <h3 class="entry__role">
+              <span lang="en">Web Developer</span><span lang="pt">Desenvolvedor Web</span>
+            </h3>
+            <p class="entry__meta">
+              <span class="entry__org"><span lang="en">Federal University of Espírito Santo (UFES)</span><span lang="pt">Universidade Federal do Espírito Santo (UFES)</span></span>
+              <span class="entry__place"><span lang="en">Vitória</span><span lang="pt">Vitória</span></span>
+            </p>
+            <p class="entry__dates"><span lang="en"><time datetime="2016-07">Jul 2016</time> &ndash; Apr 2022</span><span lang="pt"><time datetime="2016-07">jul. 2016</time> &ndash; abr. 2022</span></p>
+          </header>
+          <div class="entry__body">
+            <p>
+              <span lang="en">At UFES I built the <a href="https://acervo.sead.ufes.br/" rel="noopener" target="_blank">Acervo</a><sup>2</sup>, a library that displays books and other resources for our distance learning students, using PHP with the Laravel framework, Javascript, Bootstrap for styling, and a MySQL database.</span>
+              <span lang="pt">Na UFES eu construí o <a href="https://acervo.sead.ufes.br/" rel="noopener" target="_blank">Acervo</a><sup>2</sup>, uma biblioteca que exibe livros e outros recursos para nossos alunos de educação a distância, usando PHP com o framework Laravel, Javascript, Bootstrap para estilização e um banco MySQL.</span>
+            </p>
+            <p>
+              <span lang="en">I worked on the backend for Sistema de Seleção, an application to manage the flow of documents from students and professors applying to study/work in the university. This project consisted of a REST API, built with Node, Express and MySQL, with a React frontend.</span>
+              <span lang="pt">Atuei no backend do Sistema de Seleção, uma aplicação para gerenciar o fluxo de documentos de estudantes e professores se candidatando a estudar/trabalhar na universidade. Este projeto consistia em uma API REST, construída com Node, Express e MySQL, com um frontend em React.</span>
+            </p>
+            <ul class="chips">
+              <li>PHP</li><li>Laravel</li><li>Javascript</li><li>Bootstrap</li><li>MySQL</li><li>Node</li><li>Express</li><li>React</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <header class="entry__head">
+            <h3 class="entry__role">
+              <span lang="en">Web Developer</span><span lang="pt">Desenvolvedor Web</span>
+            </h3>
+            <p class="entry__meta">
+              <span class="entry__org"><span lang="en">Espírito Santo State Technology Institute (PRODEST)</span><span lang="pt">Instituto de Tecnologia do Espírito Santo (PRODEST)</span></span>
+              <span class="entry__place"><span lang="en">Espírito Santo</span><span lang="pt">Espírito Santo</span></span>
+            </p>
+            <p class="entry__dates"><span lang="en"><time datetime="2010-06">Jun 2010</time> &ndash; Mar 2012</span><span lang="pt"><time datetime="2010-06">jun. 2010</time> &ndash; mar. 2012</span></p>
+          </header>
+          <div class="entry__body">
+            <p>
+              <span lang="en">Development, customization and maintenance of software on the web, mainly for governmental needs (prefectures, information pages for government services and campaigns). Mostly using C#, Microsoft SQL Server, Javascript, HTML/CSS.</span>
+              <span lang="pt">Desenvolvimento, customização e manutenção de software na web, principalmente para necessidades governamentais (prefeituras, páginas de informações para serviços do governo e campanhas). Principalmente usando C#, Microsoft SQL Server, Javascript, HTML/CSS.</span>
+            </p>
+            <ul class="chips">
+              <li>C#</li><li>Microsoft SQL Server</li><li>Javascript</li><li>HTML/CSS</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <header class="entry__head">
+            <h3 class="entry__role">
+              <span lang="en">Software Developer</span><span lang="pt">Desenvolvedor de Software</span>
+            </h3>
+            <p class="entry__meta">
+              <span class="entry__org"><span lang="en">Objetiva Soluções</span><span lang="pt">Objetiva Soluções</span></span>
+              <span class="entry__place"><span lang="en">Linhares</span><span lang="pt">Linhares</span></span>
+            </p>
+            <p class="entry__dates"><span lang="en"><time datetime="2008-07">Jul 2008</time> &ndash; Jan 2009</span><span lang="pt"><time datetime="2008-07">jul. 2008</time> &ndash; jan. 2009</span></p>
+          </header>
+          <div class="entry__body">
+            <p>
+              <span lang="en">Plan, implement and maintain components of Objetiva's commercial automation system. My first non-freelance job with software development — unfortunately I had to quit after a short period due to time conflicts with my college activities.</span>
+              <span lang="pt">Planejar, implementar e manter componentes do sistema de automação comercial da Objetiva. Meu primeiro emprego não-freelance com desenvolvimento de software — infelizmente precisei sair após um curto período devido a conflitos de horário com as atividades da faculdade.</span>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="block" id="other" aria-labelledby="h-other">
+        <h2 class="block__title" id="h-other">
+          <span lang="en">Other Work Experience</span><span lang="pt">Outra Experiência Profissional</span>
+        </h2>
+        <p class="orgs">Yázigi &middot; CCAA &middot; Wizard &middot; Uptime &middot; Wize Up</p>
+        <p>
+          <span lang="en">I have held several roles as an English language instructor. Some of these positions while I was in college (2006&ndash;2009), in the gap years while not working as a developer, and sometimes in parallel with IT roles. These are not described in detail here because they are only tangentially relevant.</span>
+          <span lang="pt">Exerci vários papéis como instrutor de inglês. Algumas dessas posições enquanto estava na faculdade (2006&ndash;2009), nos anos de intervalo em que não trabalhava como desenvolvedor, e às vezes em paralelo com funções de TI. Não são descritas em detalhes aqui porque são apenas tangencialmente relevantes.</span>
+        </p>
+      </section>
+
+      <section class="block" id="education" aria-labelledby="h-edu">
+        <h2 class="block__title" id="h-edu">
+          <span lang="en">Education</span><span lang="pt">Formação</span>
+        </h2>
+
+        <article class="entry">
+          <header class="entry__head">
+            <h3 class="entry__role">
+              <span lang="en">Master's Degree in Computer Science</span><span lang="pt">Mestrado em Ciência da Computação</span>
+            </h3>
+            <p class="entry__meta">
+              <span class="entry__org"><span lang="en">Universidade Federal do Espírito Santo</span><span lang="pt">Universidade Federal do Espírito Santo</span></span>
+              <span class="entry__place"><span lang="en">Vitória</span><span lang="pt">Vitória</span></span>
+            </p>
+            <p class="entry__dates"><span lang="en"><time datetime="2014-07">Jul 2014</time> &ndash; May 2017</span><span lang="pt"><time datetime="2014-07">jul. 2014</time> &ndash; mai. 2017</span></p>
+          </header>
+          <div class="entry__body">
+            <p>
+              <span lang="en">Topics researched: Machine Translation, Chatbots, Instant Messaging Services. For the final project I built a chatbot, and the gluecode between the bot and the translation services, written in Python, with a management interface built with PyQT. The bot consumed APIs from several translation services, dictionaries and encyclopedias. Other technologies used: Prolog, Bash, HTML/CSS/Javascript.</span>
+              <span lang="pt">Temas pesquisados: Tradução Automática, Chatbots, Serviços de Mensagem Instantânea. No projeto final eu construí um chatbot e o código de integração entre o bot e os serviços de tradução, escrito em Python, com uma interface de gerenciamento construída com PyQT. O bot consumia APIs de vários serviços de tradução, dicionários e enciclopédias. Outras tecnologias utilizadas: Prolog, Bash, HTML/CSS/Javascript.</span>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <header class="entry__head">
+            <h3 class="entry__role">
+              <span lang="en">Bachelor of Computer Information Systems</span><span lang="pt">Bacharelado em Sistemas de Informação</span>
+            </h3>
+            <p class="entry__meta">
+              <span class="entry__org"><span lang="en">Pitágoras</span><span lang="pt">Pitágoras</span></span>
+              <span class="entry__place"><span lang="en">Linhares</span><span lang="pt">Linhares</span></span>
+            </p>
+            <p class="entry__dates"><span lang="en"><time datetime="2006-01">Jan 2006</time> &ndash; Dec 2009</span><span lang="pt"><time datetime="2006-01">jan. 2006</time> &ndash; dez. 2009</span></p>
+          </header>
+          <div class="entry__body">
+            <p>
+              <span lang="en">In college I was focused on acquiring programming skills and solid foundations in boolean logic, computer architecture, data structures and the CS basics. We used a lot of Pascal for structured programming and memory management, then Java for object orientation, and later a bit of Prolog and Haskell to experience other paradigms. In my free time I was playing with Flash MX Studio, learning ActionScript and making silly games.</span>
+              <span lang="pt">Na faculdade eu foquei em adquirir habilidades de programação e fundamentos sólidos em lógica booleana, arquitetura de computadores, estruturas de dados e o básico da ciência da computação. Usamos bastante Pascal para programação estruturada e gerenciamento de memória, depois Java para orientação a objetos e, mais tarde, um pouco de Prolog e Haskell para experimentar outros paradigmas. No meu tempo livre eu brincava com o Flash MX Studio, aprendendo ActionScript e fazendo jogos bobos.</span>
+            </p>
+            <p>
+              <span lang="en">The final project consisted of an exploration into the specifications of Ginga (the Brazilian Digital TV Ecosystem) and competing Digital TV standards, focusing on tools for application development applied to Set-Top Boxes.</span>
+              <span lang="pt">O projeto final consistiu em uma exploração das especificações do Ginga (o Ecossistema de TV Digital Brasileiro) e dos padrões concorrentes de TV Digital, com foco em ferramentas para desenvolvimento de aplicações aplicadas a Set-Top Boxes.</span>
+            </p>
+            <ul class="chips">
+              <li>C#</li><li>Java</li><li>Pascal</li><li>Microsoft SQL</li><li>Flash ActionScript</li><li>HTML/CSS/JS</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
     </div>
 
-    <div style="display:none">
-      <a rel="me" href="https://mastodon.social/@zunzum">Mastodon</a>
-      <sub>verification link for zunzum at mastodon.social</sub> 
-    </div>
+    <aside class="col-side">
 
-  </body>
+      <section class="block block--side" id="skills" aria-labelledby="h-tech">
+        <h2 class="block__title block__title--sm" id="h-tech">
+          <span lang="en">Technologies</span><span lang="pt">Tecnologias</span>
+        </h2>
+
+        <div class="skillgroup">
+          <h3><span lang="en">Web &amp; backend</span><span lang="pt">Web e backend</span></h3>
+          <ul class="chips chips--tight">
+            <li>Javascript</li><li>Node</li><li>Express</li><li>PHP</li><li>Laravel</li><li>HTML/CSS</li>
+            <li>Python</li><li>FastAPI</li><li>React</li><li>Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="skillgroup">
+          <h3><span lang="en">Databases</span><span lang="pt">Bancos de dados</span></h3>
+          <ul class="chips chips--tight">
+            <li>Postgres</li><li>MySQL</li><li>SQLite</li><li>MongoDB</li><li>Microsoft SQL Server</li>
+          </ul>
+        </div>
+
+        <div class="skillgroup">
+          <h3><span lang="en">Cloud &amp; infrastructure</span><span lang="pt">Nuvem e infraestrutura</span></h3>
+          <ul class="chips chips--tight">
+            <li>Kubernetes</li><li>OpenStack</li><li>StarlingX</li><li>IBM Cloud</li><li>Linux</li>
+          </ul>
+        </div>
+
+        <div class="skillgroup">
+          <h3><span lang="en">Shell &amp; tooling</span><span lang="pt">Shell e ferramentas</span></h3>
+          <ul class="chips chips--tight">
+            <li>Bash</li><li>PowerShell</li><li>Git</li>
+          </ul>
+        </div>
+
+        <div class="skillgroup">
+          <h3><span lang="en">Also</span><span lang="pt">Também</span></h3>
+          <ul class="chips chips--tight">
+            <li>C#</li><li>Java</li><li>Pascal</li><li>Prolog</li><li>Haskell</li><li>Flash ActionScript</li>
+          </ul>
+        </div>
+
+        <p class="note">
+          <span lang="en">Strong academic foundations in logic and computer programming. Comfortable with Unix-like environments (mostly RedHat and Debian based). Also comfortable with <code>Bash</code> or <code>PowerShell</code> for scripting, and with <code>Git</code> for source control.</span>
+          <span lang="pt">Fundamentos acadêmicos sólidos em lógica e programação de computadores. Confortável com ambientes Unix-like (principalmente RedHat e Debian based). Também com <code>Bash</code> ou <code>PowerShell</code> para scripts, e com <code>Git</code> para controle de versão.</span>
+        </p>
+      </section>
+
+      <section class="block block--side" id="languages" aria-labelledby="h-lang">
+        <h2 class="block__title block__title--sm" id="h-lang">
+          <span lang="en">Languages</span><span lang="pt">Idiomas</span>
+        </h2>
+        <ul class="langlist">
+          <li>
+            <span class="langlist__name">Português</span>
+            <span class="langlist__level"><span lang="en">Native speaker</span><span lang="pt">Falante nativo</span></span>
+            <span class="meter" aria-hidden="true"><i style="--v:100%"></i></span>
+          </li>
+          <li>
+            <span class="langlist__name">English</span>
+            <span class="langlist__level"><span lang="en">Fluent &middot; C2</span><span lang="pt">Fluente &middot; C2</span></span>
+            <span class="meter" aria-hidden="true"><i style="--v:92%"></i></span>
+          </li>
+          <li>
+            <span class="langlist__name">Español</span>
+            <span class="langlist__level"><span lang="en">Intermediate &middot; B2</span><span lang="pt">Intermediário &middot; B2</span></span>
+            <span class="meter" aria-hidden="true"><i style="--v:70%"></i></span>
+          </li>
+          <li>
+            <span class="langlist__name">Deutsch</span>
+            <span class="langlist__level"><span lang="en">Intermediate &middot; B1</span><span lang="pt">Intermediário &middot; B1</span></span>
+            <span class="meter" aria-hidden="true"><i style="--v:55%"></i></span>
+          </li>
+          <li>
+            <span class="langlist__name">Français</span>
+            <span class="langlist__level"><span lang="en">Beginner &middot; A2</span><span lang="pt">Iniciante &middot; A2</span></span>
+            <span class="meter" aria-hidden="true"><i style="--v:25%"></i></span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block block--side" id="contact" aria-labelledby="h-contact">
+        <h2 class="block__title block__title--sm" id="h-contact">
+          <span lang="en">Contact</span><span lang="pt">Contato</span>
+        </h2>
+        <ul class="contactlist">
+          <li>
+            <span class="contactlist__label"><span lang="en">Email</span><span lang="pt">E-mail</span></span>
+            <a href="mailto:edox86@gmail.com">edox86@gmail.com</a>
+          </li>
+          <li>
+            <span class="contactlist__label"><span lang="en">LinkedIn</span><span lang="pt">LinkedIn</span></span>
+            <a href="https://www.linkedin.com/in/eduardofranca/" rel="me noopener" target="_blank">/in/eduardofranca</a>
+          </li>
+          <li>
+            <span class="contactlist__label"><span lang="en">Based in</span><span lang="pt">Localização</span></span>
+            <span><span lang="en">Serra, ES, Brazil</span><span lang="pt">Serra, ES, Brasil</span></span>
+          </li>
+          <li>
+            <span class="contactlist__label"><span lang="en">Work mode</span><span lang="pt">Modelo de trabalho</span></span>
+            <span><span lang="en">Remote or on-site</span><span lang="pt">Remoto ou presencial</span></span>
+          </li>
+        </ul>
+      </section>
+
+    </aside>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p>
+      <span lang="en">Eduardo França &middot; Updated <time datetime="2026">2026</time> &middot; Content available in English and Portuguese.</span>
+      <span lang="pt">Eduardo França &middot; Atualizado em <time datetime="2026">2026</time> &middot; Conteúdo disponível em português e inglês.</span>
+    </p>
+    <nav class="site-foot__links" aria-label="Site">
+      <a href="/slides/"><span lang="en">Slides</span><span lang="pt">Slides</span></a>
+      <a href="/archive/old-index.html"><span lang="en">Archive</span><span lang="pt">Arquivo</span></a>
+      <a href="mailto:edox86@gmail.com"><span lang="en">Email</span><span lang="pt">E-mail</span></a>
+    </nav>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
 </html>
