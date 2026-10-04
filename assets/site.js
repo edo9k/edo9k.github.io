@@ -35,7 +35,8 @@
   }
 
   function preferred() {
-    return readStored() || normalize(navigator.language) || 'en';
+    /* Portuguese is the primary language; only an explicit past choice overrides it. */
+    return readStored() || 'pt';
   }
 
   function apply(lang, persist) {

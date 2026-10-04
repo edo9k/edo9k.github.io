@@ -204,7 +204,8 @@ html[lang="pt"] span[lang="pt"] { display: revert; }
   transform: translateX(0);
   transition: transform .32s cubic-bezier(.34, 1.3, .5, 1);
 }
-html[lang="pt"] .langswitch__track { transform: translateX(100%); }
+html[lang="pt"] .langswitch__track { transform: translateX(0); }
+html[lang="en"] .langswitch__track { transform: translateX(100%); }
 
 .langswitch__btn {
   position: relative;
@@ -225,11 +226,11 @@ html[lang="pt"] .langswitch__track { transform: translateX(100%); }
   transition: color .2s;
 }
 .langswitch__btn:hover { color: var(--ink); }
-html[lang="en"] .langswitch__btn[data-set-lang="en"],
-html[lang="pt"] .langswitch__btn[data-set-lang="pt"] { color: #fff; }
+html[lang="pt"] .langswitch__btn[data-set-lang="pt"],
+html[lang="en"] .langswitch__btn[data-set-lang="en"] { color: #fff; }
 @media (prefers-color-scheme: dark) {
-  html[lang="en"] .langswitch__btn[data-set-lang="en"],
-  html[lang="pt"] .langswitch__btn[data-set-lang="pt"] { color: #0d1116; }
+  html[lang="pt"] .langswitch__btn[data-set-lang="pt"],
+  html[lang="en"] .langswitch__btn[data-set-lang="en"] { color: #0d1116; }
 }
 
 /* ---------- 5. Hero ------------------------------------------------------ */

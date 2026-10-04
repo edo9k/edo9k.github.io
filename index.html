@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="pt" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,11 +27,14 @@
 <script>
   (function () {
     try {
+      // Portuguese is the primary language. A visitor's explicit choice wins;
+      // otherwise fall back to Portuguese (never to the browser locale).
       var stored = localStorage.getItem('cv-lang');
-      var lang = stored === 'pt' || stored === 'en' ? stored
-        : ((navigator.language || 'en').toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en');
+      var lang = stored === 'pt' || stored === 'en' ? stored : 'pt';
       document.documentElement.lang = lang;
-    } catch (e) {}
+    } catch (e) {
+      document.documentElement.lang = 'pt';
+    }
   })();
 </script>
 
@@ -82,8 +85,8 @@
 
     <div class="langswitch" role="group" aria-label="Language / Idioma">
       <span class="langswitch__track" aria-hidden="true"></span>
-      <button type="button" class="langswitch__btn" data-set-lang="pt" lang="pt" aria-pressed="false">PT</button>
-      <button type="button" class="langswitch__btn" data-set-lang="en" lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="langswitch__btn" data-set-lang="pt" lang="pt" aria-pressed="true">PT</button>
+      <button type="button" class="langswitch__btn" data-set-lang="en" lang="en" aria-pressed="false">EN</button>
     </div>
   </div>
 </header>
@@ -301,7 +304,7 @@
               <span lang="en">Master's Degree in Computer Science</span><span lang="pt">Mestrado em Ciência da Computação</span>
             </h3>
             <p class="entry__meta">
-              <span class="entry__org"><span lang="en">Universidade Federal do Espírito Santo</span><span lang="pt">Universidade Federal do Espírito Santo</span></span>
+              <span class="entry__org"><span lang="en">Federal University of Espírito Santo</span><span lang="pt">Universidade Federal do Espírito Santo</span></span>
               <span class="entry__place"><span lang="en">Vitória</span><span lang="pt">Vitória</span></span>
             </p>
             <p class="entry__dates"><span lang="en"><time datetime="2014-07">Jul 2014</time> &ndash; May 2017</span><span lang="pt"><time datetime="2014-07">jul. 2014</time> &ndash; mai. 2017</span></p>
@@ -398,27 +401,27 @@
         </h2>
         <ul class="langlist">
           <li>
-            <span class="langlist__name">Português</span>
+            <span class="langlist__name"><span lang="en">Portuguese</span><span lang="pt">Português</span></span>
             <span class="langlist__level"><span lang="en">Native speaker</span><span lang="pt">Falante nativo</span></span>
             <span class="meter" aria-hidden="true"><i style="--v:100%"></i></span>
           </li>
           <li>
-            <span class="langlist__name">English</span>
+            <span class="langlist__name"><span lang="en">English</span><span lang="pt">Inglês</span></span>
             <span class="langlist__level"><span lang="en">Fluent &middot; C2</span><span lang="pt">Fluente &middot; C2</span></span>
             <span class="meter" aria-hidden="true"><i style="--v:92%"></i></span>
           </li>
           <li>
-            <span class="langlist__name">Español</span>
+            <span class="langlist__name"><span lang="en">Spanish</span><span lang="pt">Espanhol</span></span>
             <span class="langlist__level"><span lang="en">Intermediate &middot; B2</span><span lang="pt">Intermediário &middot; B2</span></span>
             <span class="meter" aria-hidden="true"><i style="--v:70%"></i></span>
           </li>
           <li>
-            <span class="langlist__name">Deutsch</span>
+            <span class="langlist__name"><span lang="en">German</span><span lang="pt">Alemão</span></span>
             <span class="langlist__level"><span lang="en">Intermediate &middot; B1</span><span lang="pt">Intermediário &middot; B1</span></span>
             <span class="meter" aria-hidden="true"><i style="--v:55%"></i></span>
           </li>
           <li>
-            <span class="langlist__name">Français</span>
+            <span class="langlist__name"><span lang="en">French</span><span lang="pt">Francês</span></span>
             <span class="langlist__level"><span lang="en">Beginner &middot; A2</span><span lang="pt">Iniciante &middot; A2</span></span>
             <span class="meter" aria-hidden="true"><i style="--v:25%"></i></span>
           </li>
