@@ -528,7 +528,6 @@ html[lang="en"] .langswitch__btn[data-set-lang="en"] { color: #fff; }
   color: var(--ink-3);
 }
 .note p { font-size: inherit; }
-.note span { display: revert; }
 
 /* ---------- 11. Language levels ------------------------------------------ */
 
